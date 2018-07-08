@@ -4,7 +4,7 @@ Notes I've made from stuff I've learned.
 ## Categories
 - [Javascript](#javascript)
 - [Python](#python)
-- [Java] (#java)
+- [Java](#java)
 - [CSS](#css)
 - [GIT](#git)
 - [HTML](#html)
