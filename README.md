@@ -2,6 +2,7 @@
 Notes I've made from stuff I've learned.
 
 ## Categories
+- [Ruby](#Ruby)
 - [Javascript](#javascript)
 - [Python](#python)
 - [Java](#java)
@@ -13,6 +14,14 @@ Notes I've made from stuff I've learned.
 - [AWS](#aws)
 - [Other](#other)
 
+## Ruby
+
+### Rails
+
+- Make sure to migrate the database before you begin working
+```
+rake db:migrate
+```
 
 ## CSS
 
@@ -22,5 +31,3 @@ Notes I've made from stuff I've learned.
 - Compass is built ontop of SASS
 - We can write maintainable code faster
 - Provides variables and functions to reuse properties
-
-
