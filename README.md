@@ -23,7 +23,39 @@ Notes I've made from stuff I've learned.
 rake db:migrate
 ```
 
-## CSS
+### Git
+
+#### Creating a Repository
+- Initialize a local directory as a Git repository
+```
+$ git init
+```
+- Add the files in your new local repository
+```
+$ git add .
+```
+- Commit your files you staged for commit
+```
+$ git commit -m "First commit"
+```
+#### Cloning a Repository
+- Navigate to the main page of the repository
+- Click clone or download
+- Copy the URL
+- Open Terminal and paste the URL in the path listed below
+```
+$ git clone *** insert the URL here ***
+```
+
+### Redis
+- How to install Redis
+- Download redis to your source directory
+- In your shell
+```
+$ brew install redis
+To run redis
+$ redis-server
+```
 
 ### General
 
