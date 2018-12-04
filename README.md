@@ -23,7 +23,7 @@ Notes I've made from stuff I've learned.
 rake db:migrate
 ```
 
-### Git
+## Git
 
 #### Creating a Repository
 - Initialize a local directory as a Git repository
@@ -47,7 +47,7 @@ $ git commit -m "First commit"
 $ git clone *** insert the URL here ***
 ```
 
-### Redis
+## Redis
 - How to install Redis
 - Download redis to your source directory
 - In your shell
@@ -58,6 +58,12 @@ $ redis-server
 ```
 
 ### General
+
+## CSS
+
+- The .class selector selects elements with a specific class attribute.
+- To select elements with a specific class, write a period (.) character, followed by the name of the class.
+
 
 #### SASS
 - Compass is built ontop of SASS
