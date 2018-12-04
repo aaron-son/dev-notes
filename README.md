@@ -23,6 +23,37 @@ Notes I've made from stuff I've learned.
 rake db:migrate
 ```
 
+### RSpec
+- A Ruby testing framework
+- Use it to test your applications
+```
+require 'rspec/autorun'
+
+class Calculator
+  def add(a,b)
+    a+b
+  end
+end
+
+describe Calculator do
+
+  let (:calculator) {Calculator.new}
+  it "adds two numbers" do
+    calculator = Calculator.new
+    expect(calculator.add(2,3)).to eq(5)
+  end
+
+  it "adds 2 & 2" do
+    calculator = Calculator.new
+    expect(calculator.add(2,2)).to eq(4)
+  end
+end
+```
+
+- Test Error
+  Ruby level Error
+- Test Failure
+  Test is not passing or matching expectation
 ## Git
 
 #### Creating a Repository
