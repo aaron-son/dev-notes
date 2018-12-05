@@ -36,15 +36,13 @@ class Calculator
 end
 
 describe Calculator do
-
   let (:calculator) {Calculator.new}
+
   it "adds two numbers" do
-    calculator = Calculator.new
     expect(calculator.add(2,3)).to eq(5)
   end
 
   it "adds 2 & 2" do
-    calculator = Calculator.new
     expect(calculator.add(2,2)).to eq(4)
   end
 end
@@ -54,6 +52,8 @@ end
   Ruby level Error
 - Test Failure
   Test is not passing or matching expectation
+
+
 ## Git
 
 #### Creating a Repository
@@ -79,6 +79,7 @@ $ git clone *** insert the URL here ***
 ```
 
 ## Redis
+- Is used to queue jobs that fail when a response returns an error
 - How to install Redis
 - Download redis to your source directory
 - In your shell
@@ -89,6 +90,12 @@ $ redis-server
 ```
 
 ### General
+
+## Stuff to add about things/projects you've worked on
+
+## Heroku
+- Logging history is important to trace compiling errors
+-
 
 ## CSS
 
