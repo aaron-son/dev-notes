@@ -2,6 +2,7 @@
 Notes I've made from stuff I've learned.
 
 ## Categories
+- [My Local Environment](#Environment)
 - [Ruby](#Ruby)
 - [Javascript](#javascript)
 - [Python](#python)
@@ -13,6 +14,22 @@ Notes I've made from stuff I've learned.
 - [Terminal](#terminal)
 - [AWS](#aws)
 - [Other](#other)
+
+# My Local Environment
+
+## iTerm2
+- An alternative to default Terminal but includes more features of its own.  
+- Can run ZSH, Bash, and other shells in it.
+### Oh-My-Zsh
+- A plugin that runs on top of ZSH and provides themes and features.
+### Installing a Theme
+- Open .zshrc  
+```
+$ open ~/.zshrc
+```
+## Resources
+[iTerm2 + Oh My Zsh + Solarized color scheme + Meslo powerline font + Powerlevel9k]
+(#https://gist.github.com/kevin-smets/8568070)
 
 ## Ruby
 
