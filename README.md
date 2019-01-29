@@ -14,6 +14,8 @@ Notes I've made from stuff I've learned.
 - [AWS](#aws)
 - [Other](#other)
 
+## Ngrok
+- Multiplatform tunnelling, reverse proxy software that establishes secure tunnels from a public endpoint such as internet to a locally running network service while capturing all traffic for detailed inspection and replay.
 ## Ruby
 
 ### Rails
