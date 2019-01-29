@@ -2,6 +2,7 @@
 Notes I've made from stuff I've learned.
 
 ## Categories
+- [My Local Environment](#Environment)
 - [Ruby](#Ruby)
 - [Javascript](#javascript)
 - [Python](#python)
@@ -14,8 +15,26 @@ Notes I've made from stuff I've learned.
 - [AWS](#aws)
 - [Other](#other)
 
+
 ## Ngrok
 - Multiplatform tunnelling, reverse proxy software that establishes secure tunnels from a public endpoint such as internet to a locally running network service while capturing all traffic for detailed inspection and replay.
+
+# My Local Environment
+
+## iTerm2
+- An alternative to default Terminal but includes more features of its own.  
+- Can run ZSH, Bash, and other shells in it.
+### Oh-My-Zsh
+- A plugin that runs on top of ZSH and provides themes and features.
+### Installing a Theme
+- Open .zshrc  
+```
+$ open ~/.zshrc
+```
+## Resources
+[iTerm2 + Oh My Zsh + Solarized color scheme + Meslo powerline font + Powerlevel9k]
+(#https://gist.github.com/kevin-smets/8568070)
+
 ## Ruby
 
 ### Rails
