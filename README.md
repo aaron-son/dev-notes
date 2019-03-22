@@ -44,6 +44,24 @@ $ open ~/.zshrc
 rake db:migrate
 ```
 
+## Javascript
+### React
+- Three Tenets of Components
+  * Component Nesting
+    > A component can be show inside of another
+
+  * Component Reusability
+    > Components that can be easily reused through an application
+
+  * Component Configuration
+    > Configure a component when it is created
+
+- Rules of Class Components
+  * Must be a Javascript Class
+  * Must extend (subclass) React.Component
+  * Must define a 'render' method that returns some amount of JSX
+
+
 ### RSpec
 - A Ruby testing framework
 - Use it to test your applications
