@@ -45,6 +45,13 @@ rake db:migrate
 ```
 
 ## Javascript
+- State
+  * Immutable
+  * Stores datas in the current page in controller-view
+- Props
+  * Mutable
+  * Pass data and event handlers down to child class components
+  
 ### React
 - Three Tenets of Components
   * Component Nesting
@@ -61,6 +68,22 @@ rake db:migrate
   * Must extend (subclass) React.Component
   * Must define a 'render' method that returns some amount of JSX
 
+- Rules of State
+  * Only usable with class components
+  * 'State' is a JS object that contains data relevant to a component
+  * Updating 'state' on a component causes the component to (almost) instantly rerender
+  * State must be initialized when a component is created
+
+- Component Lifecycle
+  * Constructor
+    > Initialize local state
+  * Render
+    > Content visible on screen
+  * ComponentDidMount
+    > Sit and wait for updates
+  * ComponentDidUpdate
+    > Sit and wait until this component is no longer shown
+  * ComponentWillUnmount
 
 ### RSpec
 - A Ruby testing framework
