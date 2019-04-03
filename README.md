@@ -51,7 +51,7 @@ rake db:migrate
 - Props
   * Mutable
   * Pass data and event handlers down to child class components
-  
+
 ### React
 - Three Tenets of Components
   * Component Nesting
@@ -169,3 +169,7 @@ $ redis-server
 - Compass is built ontop of SASS
 - We can write maintainable code faster
 - Provides variables and functions to reuse properties
+
+## Work Stuff
+shop = Shop.find(*shop number*)
+shop.feature_ids = [*feature number*]
