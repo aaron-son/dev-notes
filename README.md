@@ -19,6 +19,36 @@ Inspired by @charliegerard's [repo](https://github.com/charliegerard/dev-notes)
 - [AWS](#aws)
 - [Other](#other)
 
+## Front End Applications
+
+- Server Side Rendering (SSR) 
+  - Compiles and renders JS scripts on the Server 
+    - Pages are static
+      - Links and urls redirecting to other server pages are pre-populated by the static page
+  - Faster page loading if rendering frameworks (React, Vue)
+ 1. Server sends HTML.
+ 2. Server renders HTML, compiles JS.
+ 3. Browser renders HTML and JS.
+ 4. Page can be used.
+ 
+- Client Side Rendering (CSR)
+  - Compiles and renders JS script on Client (their machine)
+  - Pages are dynamic
+    - Links and urls redirecting to other server pages are reloaded every time you leave the page
+  1. Server sends HTML.
+  2. Server renders HTML, sends JS.
+  3. Browser renders HTML and compiles JS.
+  4. Page can be used after scripts compile.
+
+[SSR/CSR Resource](https://stackoverflow.com/questions/27290354/reactjs-server-side-rendering-vs-client-side-rendering)
+
+- Single Page Application (SPA)
+  - Uses Server Side Rendering.
+  - Avoids interruption of the user experience between successive pages.
+  - [resource](https://en.wikipedia.org/wiki/Single-page_application)
+
+- [Webpack](https://github.com/webpack/webpack)
+  - Builds (compiles all the Javascript Project Code) to be used in a browser.
 
 ## Ngrok
 - Multi-platform tunnelling, reverse proxy software that establishes secure tunnels from a public endpoint such as internet to a locally running network service while capturing all traffic for detailed inspection and replay.
