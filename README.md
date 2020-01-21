@@ -1,5 +1,9 @@
-# dev-notes
-Notes I've made from stuff I've learned.
+# Today I Learned (There are no dumb questions)
+Notes I've made from stuff I've learned. This project contains the small things I've learned throughout my career that I would like to share.
+
+I'm trying to make it more of a habit to write things here even if it's not relevant to code. 
+
+Inspired by @charliegerard's [repo](https://github.com/charliegerard/dev-notes)
 
 ## Categories
 - [My Local Environment](#Environment)
@@ -17,7 +21,7 @@ Notes I've made from stuff I've learned.
 
 
 ## Ngrok
-- Multiplatform tunnelling, reverse proxy software that establishes secure tunnels from a public endpoint such as internet to a locally running network service while capturing all traffic for detailed inspection and replay.
+- Multi-platform tunnelling, reverse proxy software that establishes secure tunnels from a public endpoint such as internet to a locally running network service while capturing all traffic for detailed inspection and replay.
 
 # My Local Environment
 
