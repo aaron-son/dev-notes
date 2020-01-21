@@ -47,6 +47,11 @@ $ open ~/.zshrc
 ```
 rake db:migrate
 ```
+#### Active Record
+#### Shopify
+- shop = Shop.find(*shop number*)
+- shop.feature_ids = [*feature number*]
+
 
 ## Javascript
 - State
@@ -174,6 +179,4 @@ $ redis-server
 - We can write maintainable code faster
 - Provides variables and functions to reuse properties
 
-## Work Stuff
-shop = Shop.find(*shop number*)
-shop.feature_ids = [*feature number*]
+
