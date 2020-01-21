@@ -22,23 +22,25 @@ Inspired by @charliegerard's [repo](https://github.com/charliegerard/dev-notes)
 ## Front End Applications
 
 - Server Side Rendering (SSR) 
-  - Compiles and renders JS scripts on the Server 
-    - Pages are static
-      - Links and urls redirecting to other server pages are pre-populated by the static page
-  - Faster page loading if rendering frameworks (React, Vue)
- 1. Server sends HTML.
- 2. Server renders HTML, compiles JS.
- 3. Browser renders HTML and JS.
- 4. Page can be used.
+  1. Server sends HTML.
+  2. Server renders HTML, compiles JS.
+  3. Browser renders HTML and JS.
+  4. Page can be used.
+  - Compiles and renders JS scripts on the Server .
+    - Pages are static.
+      - Links and urls redirecting to other server pages are pre-populated by the static page.
+  - Faster page loading if rendering frameworks (React, Vue).
+
  
 - Client Side Rendering (CSR)
-  - Compiles and renders JS script on Client (their machine)
-  - Pages are dynamic
-    - Links and urls redirecting to other server pages are reloaded every time you leave the page
   1. Server sends HTML.
   2. Server renders HTML, sends JS.
   3. Browser renders HTML and compiles JS.
   4. Page can be used after scripts compile.
+  - Compiles and renders JS script on Client (their machine)
+    - Pages are dynamic.
+      - Links and urls redirecting to other server pages are reloaded every time you leave the page.
+  - Slower page loading if rendering frameworks (React, Vue) unless you have a fast machine.
 
 [SSR/CSR Resource](https://stackoverflow.com/questions/27290354/reactjs-server-side-rendering-vs-client-side-rendering)
 
