@@ -22,21 +22,21 @@ Inspired by @charliegerard's [repo](https://github.com/charliegerard/dev-notes)
 ## Front End Applications
 
 - Server Side Rendering (SSR) 
-  1. Server sends HTML.
-  2. Server renders HTML, compiles JS.
-  3. Browser renders HTML and JS.
-  4. Page can be used.
-  - Compiles and renders JS scripts on the Server .
+1. Server sends HTML.
+2. Server renders HTML, compiles JS.
+3. Browser renders HTML and JS.
+4. Page can be used.
+  - Compiles and renders JS scripts on the Server.
     - Pages are static.
       - Links and urls redirecting to other server pages are pre-populated by the static page.
   - Faster page loading if rendering frameworks (React, Vue).
 
  
 - Client Side Rendering (CSR)
-  1. Server sends HTML.
-  2. Server renders HTML, sends JS.
-  3. Browser renders HTML and compiles JS.
-  4. Page can be used after scripts compile.
+1. Server sends HTML.
+2. Server renders HTML, sends JS.
+3. Browser renders HTML and compiles JS.
+4. Page can be used after scripts compile.
   - Compiles and renders JS script on Client (their machine)
     - Pages are dynamic.
       - Links and urls redirecting to other server pages are reloaded every time you leave the page.
@@ -47,7 +47,7 @@ Inspired by @charliegerard's [repo](https://github.com/charliegerard/dev-notes)
 - Single Page Application (SPA)
   - Uses Server Side Rendering.
   - Avoids interruption of the user experience between successive pages.
-  - [resource](https://en.wikipedia.org/wiki/Single-page_application)
+  - [Single Page Applications according to Wikipedia](https://en.wikipedia.org/wiki/Single-page_application)
 
 - [Webpack](https://github.com/webpack/webpack)
   - Builds (compiles all the Javascript Project Code) to be used in a browser.
@@ -88,7 +88,7 @@ rake db:migrate
 ## Javascript
 - State
   * Immutable
-  * Stores datas in the current page in controller-view
+  * Stores data in the current page in controller-view
 - Props
   * Mutable
   * Pass data and event handlers down to child class components
