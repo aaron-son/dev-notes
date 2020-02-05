@@ -74,11 +74,15 @@ $ open ~/.zshrc
 ## Ruby
 
 ### Rails
+- Run ```bundle install``` to install ruby gems and keep branches from using inconsistent gem versions.
+- Run ```rake db:migrate``` to migrate the database before you begin working.
+  - This migrates all ActiveRecord database transformation when creating new ActiveRecord models.
+  - Prevents merging unrecorded transformations to database schemas.
 
-- Make sure to migrate the database before you begin working
-```
-rake db:migrate
-```
+- Filter Method
+  - before_action :method_name
+    - Used to halt a request cycle to a controller until the action is run.
+  
 #### Active Record
 #### Shopify
 - shop = Shop.find(*shop number*)
