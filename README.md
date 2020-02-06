@@ -82,6 +82,9 @@ $ open ~/.zshrc
 - Filter Method
   - before_action :method_name
     - Used to halt a request cycle to a controller until the action is run.
+
+- API Versioning
+  - [Deep Dive Resource](https://medium.com/swlh/a-deeper-dive-into-api-versioning-938b0cb58765)
   
 #### Active Record
 #### Shopify
