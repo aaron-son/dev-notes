@@ -81,8 +81,7 @@ Install Homebrew
 
 #### Install iTerm2
 
-[iTerm2]
-(<https://iterm2.com/downloads.html>)
+[iTerm2](https://iterm2.com/downloads.html)
 
 #### Installing the Theme
 
@@ -120,8 +119,7 @@ Theme: One Dark Pro
 
 ## Resources
 
-[iTerm2 + Oh My Zsh + Solarized color scheme + Meslo powerline font + Powerlevel9k]
-(<https://gist.github.com/kevin-smets/8568070>)
+[iTerm2 + Oh My Zsh + Solarized color scheme + Meslo powerline font + Powerlevel9k](https://gist.github.com/kevin-smets/8568070)
 
 ## Ruby
 
