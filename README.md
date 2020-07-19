@@ -79,7 +79,8 @@ Install Homebrew
 - An alternative to default Terminal but includes more features of its own.  
 - Can run ZSH, Bash, and other shells in it.
 
-Install iTerm2
+#### Install iTerm2
+
 [iTerm2]
 (<https://iterm2.com/downloads.html>)
 
