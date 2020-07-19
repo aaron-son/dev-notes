@@ -6,6 +6,7 @@ I'm trying to make it more of a habit to write things here even if it's not rele
 Inspired by @charliegerard's [repo](https://github.com/charliegerard/dev-notes)
 
 ## Categories
+
 - [My Local Environment](#Environment)
 - [Ruby](#Ruby)
 - [Javascript](#javascript)
@@ -21,26 +22,27 @@ Inspired by @charliegerard's [repo](https://github.com/charliegerard/dev-notes)
 
 ## Front End Applications
 
-- Server Side Rendering (SSR) 
+Server Side Rendering (SSR)
+
 1. Server sends HTML.
 2. Server renders HTML, compiles JS.
 3. Browser renders HTML and JS.
 4. Page can be used.
-  - Compiles and renders JS scripts on the Server.
-    - Pages are static.
-      - Links and urls redirecting to other server pages are pre-populated by the static page.
-  - Faster page loading if rendering frameworks (React, Vue).
+   - Compiles and renders JS scripts on the Server.
+     - Pages are static.
+     - Links and urls redirecting to other server pages are pre-populated by the static page.
+   - Faster page loading if rendering frameworks (React, Vue).
 
- 
-- Client Side Rendering (CSR)
+Client Side Rendering (CSR)
+
 1. Server sends HTML.
 2. Server renders HTML, sends JS.
 3. Browser renders HTML and compiles JS.
 4. Page can be used after scripts compile.
-  - Compiles and renders JS script on Client (their machine)
-    - Pages are dynamic.
-      - Links and urls redirecting to other server pages are reloaded every time you leave the page.
-  - Slower page loading if rendering frameworks (React, Vue) unless you have a fast machine.
+   - Compiles and renders JS script on Client (their machine)
+      - Pages are dynamic.
+        - Links and urls redirecting to other server pages are reloaded every time you leave the page.
+   - Slower page loading if rendering frameworks (React, Vue) unless you have a fast machine.
 
 [SSR/CSR Resource](https://stackoverflow.com/questions/27290354/reactjs-server-side-rendering-vs-client-side-rendering)
 
@@ -53,27 +55,37 @@ Inspired by @charliegerard's [repo](https://github.com/charliegerard/dev-notes)
   - Builds (compiles all the Javascript Project Code) to be used in a browser.
 
 ## Ngrok
+
 - Multi-platform tunnelling, reverse proxy software that establishes secure tunnels from a public endpoint such as internet to a locally running network service while capturing all traffic for detailed inspection and replay.
 
-# My Local Environment
+## My Local Environment
 
-## iTerm2
+### iTerm2
+
 - An alternative to default Terminal but includes more features of its own.  
 - Can run ZSH, Bash, and other shells in it.
+
 ### Oh-My-Zsh
+
 - A plugin that runs on top of ZSH and provides themes and features.
+
 ### Installing a Theme
+
 - Open .zshrc  
-```
+
+```bash
 $ open ~/.zshrc
 ```
+
 ## Resources
+
 [iTerm2 + Oh My Zsh + Solarized color scheme + Meslo powerline font + Powerlevel9k]
-(#https://gist.github.com/kevin-smets/8568070)
+(#<https://gist.github.com/kevin-smets/8568070>)
 
 ## Ruby
 
 ### Rails
+
 - Run ```bundle install``` to install ruby gems and keep branches from using inconsistent gem versions.
 - Run ```rake db:migrate``` to migrate the database before you begin working.
   - This migrates all ActiveRecord database transformation when creating new ActiveRecord models.
@@ -87,56 +99,81 @@ $ open ~/.zshrc
   - [Deep Dive Resource](https://medium.com/swlh/a-deeper-dive-into-api-versioning-938b0cb58765)
   
 #### Active Record
-#### Shopify
-- shop = Shop.find(*shop number*)
-- shop.feature_ids = [*feature number*]
 
+#### Shopify
+
+- shop = Shop.find(-shop number-)
+- shop.feature_ids = [-feature number-]
 
 ## Javascript
+
 - State
-  * Immutable
-  * Stores data in the current page in controller-view
+  - Immutable
+  - Stores data in the current page in controller-view
 - Props
-  * Mutable
-  * Pass data and event handlers down to child class components
+  - Mutable
+  - Pass data and event handlers down to child class components
 
 ### React
+
 - Three Tenets of Components
-  * Component Nesting
+  - Component Nesting
     > A component can be show inside of another
 
-  * Component Reusability
+  - Component Reusability
     > Components that can be easily reused through an application
 
-  * Component Configuration
+  - Component Configuration
     > Configure a component when it is created
 
 - Rules of Class Components
-  * Must be a Javascript Class
-  * Must extend (subclass) React.Component
-  * Must define a 'render' method that returns some amount of JSX
+  - Must be a Javascript Class
+  - Must extend (subclass) React.Component
+  - Must define a 'render' method that returns some amount of JSX
 
 - Rules of State
-  * Only usable with class components
-  * 'State' is a JS object that contains data relevant to a component
-  * Updating 'state' on a component causes the component to (almost) instantly rerender
-  * State must be initialized when a component is created
+  - Only usable with class components
+  - 'State' is a JS object that contains data relevant to a component
+  - Updating 'state' on a component causes the component to (almost) instantly rerender
+  - State must be initialized when a component is created
 
 - Component Lifecycle
-  * Constructor
+  - Constructor
     > Initialize local state
-  * Render
+  - Render
     > Content visible on screen
-  * ComponentDidMount
+  - ComponentDidMount
     > Sit and wait for updates
-  * ComponentDidUpdate
+  - ComponentDidUpdate
     > Sit and wait until this component is no longer shown
-  * ComponentWillUnmount
+  - ComponentWillUnmount
+
+- Hooks
+  > Lets you use(State) instead of creating a class to access State.
+  > Lets you add React state to function(al) components
+  - useState
+  > This is function provided by React that lets you "hook" into React features in Function Components.
+  > It can take a primitive variable as simple as a string or a set of objects.
+
+    ```javascript
+    > ex: const [currentItem, setCurrentItem] = useState();
+    > ex: const [items, setItems] = useState([
+        {id: 1, item: "hammer"},
+        {id: 2, item: "screwdriver"},
+        {id: 3, item: "pliers"},
+        {id: 4, item: "wrench"}
+      ]);
+    ```
+
+- Syntax
+  - Property Spread Notation
 
 ### RSpec
+
 - A Ruby testing framework
 - Use it to test your applications
-```
+
+```ruby
 require 'rspec/autorun'
 
 class Calculator
@@ -163,37 +200,47 @@ end
 - Test Failure
   Test is not passing or matching expectation
 
-
 ## Git
 
 #### Creating a Repository
+
 - Initialize a local directory as a Git repository
+
+```git
+$git init
 ```
-$ git init
-```
+
 - Add the files in your new local repository
+
+```git
+$git add .
 ```
-$ git add .
-```
+
 - Commit your files you staged for commit
-```
+
+```git
 $ git commit -m "First commit"
 ```
+
 #### Cloning a Repository
+
 - Navigate to the main page of the repository
 - Click clone or download
 - Copy the URL
 - Open Terminal and paste the URL in the path listed below
-```
-$ git clone *** insert the URL here ***
+
+```git
+$ git clone --- insert the URL here ---
 ```
 
 ## Redis
+
 - Is used to queue jobs that fail when a response returns an error
 - How to install Redis
 - Download redis to your source directory
 - In your shell
-```
+
+```bash
 $ brew install redis
 To run redis
 $ redis-server
@@ -204,18 +251,16 @@ $ redis-server
 ## Stuff to add about things/projects you've worked on
 
 ## Heroku
+
 - Logging history is important to trace compiling errors
--
 
 ## CSS
 
 - The .class selector selects elements with a specific class attribute.
 - To select elements with a specific class, write a period (.) character, followed by the name of the class.
 
-
 #### SASS
+
 - Compass is built ontop of SASS
 - We can write maintainable code faster
 - Provides variables and functions to reuse properties
-
-
