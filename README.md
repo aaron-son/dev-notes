@@ -60,22 +60,60 @@ Client Side Rendering (CSR)
 
 ## My Local Environment
 
-### iTerm2
+### Mac
 
-- An alternative to default Terminal but includes more features of its own.  
-- Can run ZSH, Bash, and other shells in it.
+#### Homebrew
+
+Install Homebrew
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```
 
 ### Oh-My-Zsh
 
 - A plugin that runs on top of ZSH and provides themes and features.
 
-### Installing a Theme
+### iTerm2
 
-- Open .zshrc  
+- An alternative to default Terminal but includes more features of its own.  
+- Can run ZSH, Bash, and other shells in it.
+
+Install iTerm2
+[iTerm2]
+(#<https://iterm2.com/downloads.html>)
+
+#### Installing a Theme
 
 ```bash
-$ open ~/.zshrc
+brew tap sambadevi/powerlevel9k
+brew install powerlevel9k
 ```
+
+```bash
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+```
+
+Run this command below to append the line: ZSH_THEME="powerlevel9k/powerlevel9k"
+to your ~/.zshrc
+
+```bash
+echo "source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme" >> ~/.zshrc
+```
+
+You then need to select this theme in your ~/.zshrc:
+ZSH_THEME="powerlevel9k/powerlevel9k"
+
+Install Powerline Fonts
+
+```bash
+brew install python
+pip install --user powerline-status
+```
+
+#### VSCode
+
+Theme: One Dark Pro
 
 ## Resources
 
