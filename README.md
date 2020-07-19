@@ -118,7 +118,7 @@ $ open ~/.zshrc
 
 - Three Tenets of Components
   - Component Nesting
-    > A component can be show inside of another
+    > A component can be shown inside of another
 
   - Component Reusability
     > Components that can be easily reused through an application
@@ -202,24 +202,24 @@ end
 
 ## Git
 
-#### Creating a Repository
+### Creating a Repository
 
 - Initialize a local directory as a Git repository
 
 ```git
-$git init
+git init
 ```
 
 - Add the files in your new local repository
 
 ```git
-$git add .
+git add .
 ```
 
 - Commit your files you staged for commit
 
 ```git
-$ git commit -m "First commit"
+git commit -m "First commit"
 ```
 
 #### Cloning a Repository
@@ -230,7 +230,7 @@ $ git commit -m "First commit"
 - Open Terminal and paste the URL in the path listed below
 
 ```git
-$ git clone --- insert the URL here ---
+git clone --- insert the URL here ---
 ```
 
 ## Redis
@@ -259,7 +259,7 @@ $ redis-server
 - The .class selector selects elements with a specific class attribute.
 - To select elements with a specific class, write a period (.) character, followed by the name of the class.
 
-#### SASS
+### SASS
 
 - Compass is built ontop of SASS
 - We can write maintainable code faster
