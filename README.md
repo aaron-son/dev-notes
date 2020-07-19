@@ -81,14 +81,16 @@ Install Homebrew
 
 Install iTerm2
 [iTerm2]
-(#<https://iterm2.com/downloads.html>)
+(<https://iterm2.com/downloads.html>)
 
-#### Installing a Theme
+#### Installing the Theme
 
 ```bash
 brew tap sambadevi/powerlevel9k
 brew install powerlevel9k
 ```
+
+Or
 
 ```bash
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
@@ -104,21 +106,21 @@ echo "source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme" >> ~/.zshrc
 You then need to select this theme in your ~/.zshrc:
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
-Install Powerline Fonts
+#### Install Powerline Fonts
 
 ```bash
 brew install python
 pip install --user powerline-status
 ```
 
-#### VSCode
+### VSCode
 
 Theme: One Dark Pro
 
 ## Resources
 
 [iTerm2 + Oh My Zsh + Solarized color scheme + Meslo powerline font + Powerlevel9k]
-(#<https://gist.github.com/kevin-smets/8568070>)
+(<https://gist.github.com/kevin-smets/8568070>)
 
 ## Ruby
 
