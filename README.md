@@ -1,7 +1,7 @@
 # Today I Learned (There are no dumb questions)
 Notes I've made from stuff I've learned. This project contains the small things I've learned throughout my career that I would like to share.
 
-I'm trying to make it more of a habit to write things here even if it's not relevant to code. 
+I'm trying to make it more of a habit to write things here.
 
 Inspired by @charliegerard's [repo](https://github.com/charliegerard/dev-notes)
 
@@ -19,44 +19,6 @@ Inspired by @charliegerard's [repo](https://github.com/charliegerard/dev-notes)
 - [Terminal](#terminal)
 - [AWS](#aws)
 - [Other](#other)
-
-## Front End Applications
-
-Server Side Rendering (SSR)
-
-1. Server sends HTML.
-2. Server renders HTML, compiles JS.
-3. Browser renders HTML and JS.
-4. Page can be used.
-   - Compiles and renders JS scripts on the Server.
-     - Pages are static.
-     - Links and urls redirecting to other server pages are pre-populated by the static page.
-   - Faster page loading if rendering frameworks (React, Vue).
-
-Client Side Rendering (CSR)
-
-1. Server sends HTML.
-2. Server renders HTML, sends JS.
-3. Browser renders HTML and compiles JS.
-4. Page can be used after scripts compile.
-   - Compiles and renders JS script on Client (their machine)
-      - Pages are dynamic.
-        - Links and urls redirecting to other server pages are reloaded every time you leave the page.
-   - Slower page loading if rendering frameworks (React, Vue) unless you have a fast machine.
-
-[SSR/CSR Resource](https://stackoverflow.com/questions/27290354/reactjs-server-side-rendering-vs-client-side-rendering)
-
-- Single Page Application (SPA)
-  - Uses Server Side Rendering.
-  - Avoids interruption of the user experience between successive pages.
-  - [Single Page Applications according to Wikipedia](https://en.wikipedia.org/wiki/Single-page_application)
-
-- [Webpack](https://github.com/webpack/webpack)
-  - Builds (compiles all the Javascript Project Code) to be used in a browser.
-
-## Ngrok
-
-- Multi-platform tunnelling, reverse proxy software that establishes secure tunnels from a public endpoint such as internet to a locally running network service while capturing all traffic for detailed inspection and replay.
 
 ## My Local Environment
 
@@ -76,7 +38,7 @@ Install Homebrew
 
 ### iTerm2
 
-- An alternative to default Terminal but includes more features of its own.  
+- An alternative to default Terminal but includes more features of its own.
 - Can run ZSH, Bash, and other shells in it.
 
 #### Install iTerm2
@@ -121,6 +83,51 @@ Theme: One Dark Pro
 
 [iTerm2 + Oh My Zsh + Solarized color scheme + Meslo powerline font + Powerlevel9k](https://gist.github.com/kevin-smets/8568070)
 
+## Front End Overview
+
+[Babel](https://babeljs.io/)
+Transpiles your javascript down from the latest standards to backwards compatible, browser friendly source. Used for transpiling JSX to JS.
+
+[Webpack](https://webpack.js.org/)
+Bundles your files into static assets that are ready for production deploy. Many extensible plugins available.
+
+Server Side Rendering (SSR)
+
+1. Server sends HTML.
+2. Server renders HTML, compiles JS.
+3. Browser renders HTML and JS.
+4. Page can be used.
+   - Compiles and renders JS scripts on the Server.
+     - Pages are static.
+     - Links and urls redirecting to other server pages are pre-populated by the static page.
+   - Faster page loading if rendering frameworks (React, Vue).
+
+Client Side Rendering (CSR)
+
+1. Server sends HTML.
+2. Server renders HTML, sends JS.
+3. Browser renders HTML and compiles JS.
+4. Page can be used after scripts compile.
+   - Compiles and renders JS script on Client (their machine)
+      - Pages are dynamic.
+        - Links and urls redirecting to other server pages are reloaded every time you leave the page.
+   - Slower page loading if rendering frameworks (React, Vue) unless you have a fast machine.
+
+[SSR/CSR Resource](https://stackoverflow.com/questions/27290354/reactjs-server-side-rendering-vs-client-side-rendering)
+
+- Single Page Application (SPA)
+  - Uses Server Side Rendering.
+  - Avoids interruption of the user experience between successive pages.
+  - [Single Page Applications according to Wikipedia](https://en.wikipedia.org/wiki/Single-page_application)
+  - [react-router](https://github.com/rackt/react-router) is an example of managing change on a webpage without refresh.
+
+- [Webpack](https://github.com/webpack/webpack)
+  - Builds (compiles all the Javascript Project Code) to be used in a browser.
+
+## Ngrok
+
+- Multi-platform tunnelling, reverse proxy software that establishes secure tunnels from a public endpoint such as internet to a locally running network service while capturing all traffic for detailed inspection and replay.
+
 ## Ruby
 
 ### Rails
@@ -136,7 +143,7 @@ Theme: One Dark Pro
 
 - API Versioning
   - [Deep Dive Resource](https://medium.com/swlh/a-deeper-dive-into-api-versioning-938b0cb58765)
-  
+
 #### Active Record
 
 #### Shopify
@@ -146,6 +153,8 @@ Theme: One Dark Pro
 
 ## Javascript
 
+### React
+
 - State
   - Immutable
   - Stores data in the current page in controller-view
@@ -153,7 +162,12 @@ Theme: One Dark Pro
   - Mutable
   - Pass data and event handlers down to child class components
 
-### React
+Functional and Class Components
+
+- Functional Component
+  - A plain JavaScript function that accepts props as an arguments and returns a React element.
+- Class Component
+  - Returns a react
 
 - Three Tenets of Components
   - Component Nesting
@@ -203,7 +217,8 @@ Theme: One Dark Pro
         {id: 4, item: "wrench"}
       ]);
     ```
-
+- JSX
+  - “syntactic sugar for the React.createElement(component, props, …children) function”
 - Syntax
   - Property Spread Notation
 
