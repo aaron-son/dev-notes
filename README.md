@@ -237,8 +237,8 @@ The Three Fundamental Principles of Redux:
 
 - Single source of truth
 - State is read-only
-- Changes are made with [pure functions](####definitions)
-  - Utilized by [pure reducers]
+- Changes are made with [pure functions](#definitions)
+  - Utilized by pure reducers
     - a reducer is a function which accepts two arguments (state, action)
       - state represents the current state of the application in store
       - action represents the action that triggered
