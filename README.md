@@ -209,18 +209,44 @@ Functional and Class Components
   > It can take a primitive variable as simple as a string or a set of objects.
 
     ```javascript
-    > ex: const [currentItem, setCurrentItem] = useState();
-    > ex: const [items, setItems] = useState([
+    > eg: const [currentItem, setCurrentItem] = useState();
+    > eg: const [items, setItems] = useState([
         {id: 1, item: "hammer"},
         {id: 2, item: "screwdriver"},
         {id: 3, item: "pliers"},
         {id: 4, item: "wrench"}
       ]);
     ```
+
 - JSX
   - “syntactic sugar for the React.createElement(component, props, …children) function”
 - Syntax
   - Property Spread Notation
+
+### Redux
+
+Redux attempts to make state mutations predictable by imposing certain restrictions on how and when updates can happen.
+
+Why use Redux?
+
+- Used to pass state between components
+- For fetching data from API & storing it (eg. redux-saga or redux-thunk)
+- For storing forms (eg. redux-form)
+
+The Three Fundamental Principles of Redux:
+
+- Single source of truth
+- State is read-only
+- Changes are made with [pure functions](####definitions)
+  - Utilized by [pure reducers]
+    - a reducer is a function which accepts two arguments (state, action)
+      - state represents the current state of the application in store
+      - action represents the action that triggered
+
+#### Definitions
+Pure functions - are functions that accept an input and returns a value without modifying any data outside its scope(Side Effects).
+
+
 
 ### RSpec
 
