@@ -9,6 +9,7 @@ Inspired by @charliegerard's [repo](https://github.com/charliegerard/dev-notes)
 
 - [My Local Environment](#Environment)
 - [Ruby](#Ruby)
+- [SQL](#sql)
 - [Javascript](#javascript)
 - [Python](#python)
 - [Java](#java)
@@ -144,12 +145,64 @@ Client Side Rendering (CSR)
 - API Versioning
   - [Deep Dive Resource](https://medium.com/swlh/a-deeper-dive-into-api-versioning-938b0cb58765)
 
+### RSpec
+
+- A Ruby testing framework
+- Use it to test your applications
+
+```ruby
+require 'rspec/autorun'
+
+class Calculator
+  def add(a,b)
+    a+b
+  end
+end
+
+RSpec.describe Calculator do
+  let (:calculator) {Calculator.new}
+
+  it "adds two numbers" do
+    expect(calculator.add(2,3)).to eq(5)
+  end
+
+  it "adds 2 & 2" do
+    expect(calculator.add(2,2)).to eq(4)
+  end
+end
+
+RSpec.describe "an integer" do
+  it "is equal to another integer of the same value" do
+    expect(5).to eql(5)
+  end
+
+  it "is not equal to another integer of a different value" do
+    expect(5).not_to eql(6)
+  end
+
+  it "is not equal to a float of the same value" do
+    expect(5).not_to eql(5.0)
+  end
+end
+```
+
+- Test Error
+  Ruby level Error
+- Test Failure
+  Test is not passing or matching expectation
+
 #### Active Record
 
 #### Shopify
 
 - shop = Shop.find(-shop number-)
 - shop.feature_ids = [-feature number-]
+
+## SQL
+
+### MySQL
+### PostgreSQL
+### SQLite3
 
 ## Javascript
 
@@ -246,53 +299,6 @@ The Three Fundamental Principles of Redux:
 #### Definitions
 Pure functions - are functions that accept an input and returns a value without modifying any data outside its scope(Side Effects).
 
-
-
-### RSpec
-
-- A Ruby testing framework
-- Use it to test your applications
-
-```ruby
-require 'rspec/autorun'
-
-class Calculator
-  def add(a,b)
-    a+b
-  end
-end
-
-RSpec.describe Calculator do
-  let (:calculator) {Calculator.new}
-
-  it "adds two numbers" do
-    expect(calculator.add(2,3)).to eq(5)
-  end
-
-  it "adds 2 & 2" do
-    expect(calculator.add(2,2)).to eq(4)
-  end
-end
-
-RSpec.describe "an integer" do
-  it "is equal to another integer of the same value" do
-    expect(5).to eql(5)
-  end
-
-  it "is not equal to another integer of a different value" do
-    expect(5).not_to eql(6)
-  end
-
-  it "is not equal to a float of the same value" do
-    expect(5).not_to eql(5.0)
-  end
-end
-```
-
-- Test Error
-  Ruby level Error
-- Test Failure
-  Test is not passing or matching expectation
 
 ## Git
 
