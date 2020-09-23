@@ -299,6 +299,8 @@ The Three Fundamental Principles of Redux:
 #### Definitions
 Pure functions - are functions that accept an input and returns a value without modifying any data outside its scope(Side Effects).
 
+### Typescript
+
 
 ## Git
 
