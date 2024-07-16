@@ -366,3 +366,7 @@ $ redis-server
 - Compass is built ontop of SASS
 - We can write maintainable code faster
 - Provides variables and functions to reuse properties
+
+
+virtualenv creates a sub folder that serves as a python environment
+it uses the existing python global version provided in the terminal
