@@ -1,0 +1,31 @@
+# macOS system files
+.DS_Store
+
+# Logs
+*.log
+
+# Node modules
+node_modules/
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Compiled binaries
+*.exe
+*.dll
+*.so
+*.o
+
+# Archives
+*.zip
+*.tar
+*.gz
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+
+# Environment files
+.env
